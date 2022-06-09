@@ -1,1 +1,2 @@
 ## ¿Qué pasa si añadimos un nuevo campo?  los anteriores registros no lo tendrían, entonces ¿Con qué valor se actualizarán?
+Depende ,si lo que cambiamos le hemos puesto o tiene  valor por default,se cambiaria a ese,sino entonces le podemos indicar que puede ser nulo con null=true.
