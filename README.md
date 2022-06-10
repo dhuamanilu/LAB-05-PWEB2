@@ -15,5 +15,8 @@ null=true ,esto hara que si no se le envia algo ,se almacena NULL en la base de 
 Cuales no  
 
 blank=True,Ssimplemente el valor no sera requerido cuando creemos nuevos registros en la base de datos
-Como hemos visto ,django nos da opciones como darle un valor x default, o tambien se podria borrar la base de datos y empezar de nuevo
+Como hemos visto ,django nos da opciones como darle un valor x default, o tambien se podria borrar la base de datos y empezar de nuevo  
+## ¡Cree más vistas!  
+ 
+Se crearon más vistas
 
