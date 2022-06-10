@@ -4,12 +4,14 @@
 		<title>Código para estudiantes desde Django</title>
 	</head>
 	<body>
+		{% include 'nav.html' %}
 		<h1>Este es un texto de base</h1>
 		{% block content %}
 			Este texto se reemplazara
 		{% endblock %}
 
 		<h3>Este h3 es de base</h3>
+		
 		{% block contenido %}
 			Essto tambien se reemplazara
 		{% endblock %}
