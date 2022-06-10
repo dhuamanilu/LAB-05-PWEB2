@@ -12,6 +12,24 @@
 	{% for myItem in myList%}
 	<li>{{ forloop.counter }} - {{ myItem }}</li>
 	{% endfor %}
+	<li>Indexado en cero: </li>
+	{% for item in myList%}
+	<li>{{ forloop.counter0 }} - {{ item }}</li>
+	{% endfor %}
+	<li>Indice al reves : </li>
+	{% for item in myList%}
+	<li>{{ forloop.revcounter }} - {{ item }}</li>
+	{% endfor %}
+
+</ul>
+<p>for's anidados</p>
+<ul>
+	{% for item in my2dList %}
+		{% for it in item %}
+			<li> {{it}} </li>
+
+		{% endfor %}
+	{% endfor %}
 </ul>
 
 

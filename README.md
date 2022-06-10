@@ -30,7 +30,8 @@ Se creo plantilla utilizabase.html y se crearon más bloques ,como el block cont
 ## Verifique las opciones de navegación que aparecen en el resto de sus vistas  
 En el resto de mis vistas igual aparece la barra de navegación,puessto que todas mis vistas utilizan base.html como basee  
 # DJANGO 3  
- 
+## Revisar el objeto forloop en la documentación oficial y hacer experimentos  
+Se reviso la documentacion y se utilizo lo siguiente : forloop.counter0,forloop.revcounter tambien existen los atributos forloop.first , forloop.last , forloop.parentloop 
 
 
 
