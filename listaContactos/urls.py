@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from inicio.views import myHomeView
 urlpatterns = [
-    path('',miHomeView,name='Página de inicio'),
+    path('',myHomeView,name='Página de inicio'),
     path('admin/', admin.site.urls),
 ]
