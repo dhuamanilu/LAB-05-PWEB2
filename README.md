@@ -22,7 +22,13 @@ Se crearon las vistas anotherView y vistaCreada que se observan al utilizar los 
 
 ## ¡CREE SUS PROPIAS PLANTILLAS!  
 Se creara la plantilla home2.html  
+
 ## Revise la documentación sobre el objeto request y pruebe otras de sus propiedades (atributos o métodos)  
+Se reviso la documentación y se utilizo los atributos is_anonymous,is_staff  
+## Realice sus propias plantillas usando la Base y cree más bloques  
+Se creo plantilla utilizabase.html y se crearon más bloques ,como el block contenido  
+
+
 
 
 
