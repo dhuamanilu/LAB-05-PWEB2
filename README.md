@@ -20,4 +20,7 @@ Como hemos visto ,django nos da opciones como darle un valor x default, o tambie
 
 Se crearon las vistas anotherView y vistaCreada que se observan al utilizar los urls another/ y observar/ respectivamente  
 
+## ¡CREE SUS PROPIAS PLANTILLAS!  
+Se creara la plantilla home2.html  
+
 
