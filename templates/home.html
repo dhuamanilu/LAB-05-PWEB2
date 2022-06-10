@@ -5,10 +5,22 @@
 	</head>
 	<body>
 		<h1>Hola mundo desde DJango</h1>
-		<h2>Y además con templates</h2>
-		{{request.user}}
+		<h2>Metodos y atributos de request.user</h2>
+		Request user :{{request.user}}
 		<br>
-		{{request.user.is_authenticated}}
+		Request user is authenticated : {{request.user.is_authenticated}}
+		<br>
+		Request user is anonymous : {{request.user.is_anonymous}}
+		<br>
+		Request user is staff: {{request.user.is_staff}}
+		<br>
+		Request user groups : {{request.user.groups}}
+		<br>
+		Request user id : {{request.user.id}}
+		<br>
+		Request user get_username(): {{request.user.get_username}}
+		<br>
+		Request user permitions : {{request.user.get_user_permissions}}
 	</body>
 
 </html>
