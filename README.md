@@ -34,6 +34,7 @@ En el resto de mis vistas igual aparece la barra de navegación,puessto que toda
 Se revisó la documentación y se utilizó lo siguiente : forloop.counter0,forloop.revcounter tambien existen los atributos forloop.first , forloop.last , forloop.parentloop  
 ## Revisar la documentación oficial sobre if, hacer experimentos con otros operadores de comparación
 Se revisó la documentación y se utilizó los operadores: in ,not in ,is not  
+## Probar la aplicación de varios otros filtros a variables y  bloques, revisando la documentación oficial  
 
 
 

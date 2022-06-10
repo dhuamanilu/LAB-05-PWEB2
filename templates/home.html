@@ -4,39 +4,42 @@
 <h2>Hola mundo desde Django </h2>
 <h3>Con templates</h3>
 <p>
-	{{myText|upper}},
+	{{myText|upper|truncatechars:"16"}},
 	{{myNumber}}
 </p>
 
 <ul>
 	{% for myItem in myList%}
-	<li>{{ forloop.counter }} - {{ myItem }}
+	<li>{{ forloop.counter }} - {{ myItem|add:"2" }}
 	{% if myItem == 33 %}
 		-Este número es mágico
+	
 	{% elif myItem > 50 %}
 		-Este número es mayor que 50
 	{% endif %}
-	{% if "ho" in myItem %}
-		-Esta cadena contiene la subcadena "ho"
-	{% endif %} 
+	
 	{% if "4" not in myItem %}
 		-Esta cadena no contiene el 4
 	{% endif %}
-	{% if somevar is not False %}
-  		Este booleano no es falso
-	{% endif %}
-
-
 
 	</li>
 	{% endfor %}
 	<li>Indexado en cero: </li>
 	{% for item in myList%}
-	<li>{{ forloop.counter0 }} - {{ item }}</li>
+	<li>{{ forloop.counter0 }} - {{ item }}
+		{% if "ho" in item %}
+			-Esta cadena contiene la subcadena "ho"
+		{% endif %} 
+
+	</li>
 	{% endfor %}
 	<li>Indice al reves : </li>
 	{% for item in myList%}
-	<li>{{ forloop.revcounter }} - {{ item }}</li>
+	<li>{{ forloop.revcounter }} - {{ item }}
+		{% if somevar is not False %}
+  			Este booleano no es falso
+		{% endif %}
+	</li>
 	{% endfor %}
 
 </ul>
