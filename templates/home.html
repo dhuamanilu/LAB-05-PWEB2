@@ -16,6 +16,16 @@
 	{% elif myItem > 50 %}
 		-Este número es mayor que 50
 	{% endif %}
+	{% if "ho" in myItem %}
+		-Esta cadena contiene la subcadena "ho"
+	{% endif %} 
+	{% if "4" not in myItem %}
+		-Esta cadena no contiene el 4
+	{% endif %}
+	{% if somevar is not False %}
+  		Este booleano no es falso
+	{% endif %}
+
 
 
 	</li>
