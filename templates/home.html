@@ -6,6 +6,9 @@
 	<body>
 		<h1>Hola mundo desde DJango</h1>
 		<h2>Y además con templates</h2>
+		{{request.user}}
+		<br>
+		{{request.user.is_authenticated}}
 	</body>
 
 </html>
