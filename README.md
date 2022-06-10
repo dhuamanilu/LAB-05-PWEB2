@@ -17,6 +17,7 @@ Cuales no
 blank=True,Ssimplemente el valor no sera requerido cuando creemos nuevos registros en la base de datos
 Como hemos visto ,django nos da opciones como darle un valor x default, o tambien se podria borrar la base de datos y empezar de nuevo  
 ## ¡Cree más vistas!  
- 
-Se crearon más vistas
+
+Se crearon las vistas anotherView y vistaCreada que se observan al utilizar los urls another/ y observar/ respectivamente  
+
 
