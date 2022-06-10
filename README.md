@@ -29,6 +29,8 @@ Se reviso la documentación y se utilizo los atributos is_anonymous,is_staff
 Se creo plantilla utilizabase.html y se crearon más bloques ,como el block contenido  
 ## Verifique las opciones de navegación que aparecen en el resto de sus vistas  
 En el resto de mis vistas igual aparece la barra de navegación,puessto que todas mis vistas utilizan base.html como basee  
+# DJANGO 3  
+ 
 
 
 
