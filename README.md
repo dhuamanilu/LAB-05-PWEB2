@@ -37,7 +37,11 @@ Se revisó la documentación y se utilizó los operadores: in ,not in ,is not
 ## Probar la aplicación de varios otros filtros a variables y  bloques, revisando la documentación oficial  
 Se probo truncatechars,upper y add,ademáss adslashes capfirst y cut  
 ## Complete la descripción del modelo de persona  
-Se completo descripcion.html para que tenga todos los campos
+Se completo descripcion.html para que tenga todos los campos  
+## Intente llenar el formulario para hacerlo inválido  
+Se intento llenar el formulario para que sea inválido,los campos nombres y apellidos tienen un limite de palabras,ademas en edad solo se puede poner numeros,al poner otra cosa aparece un mensaje que dice,ingrese un numero entero,si lo quiero enviar vacio no deja  
+
+
 
 
 
