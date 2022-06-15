@@ -40,6 +40,13 @@ Se probo truncatechars,upper y add,ademáss adslashes capfirst y cut
 Se completo descripcion.html para que tenga todos los campos  
 ## Intente llenar el formulario para hacerlo inválido  
 Se intento llenar el formulario para que sea inválido,los campos nombres y apellidos tienen un limite de palabras,ademas en edad solo se puede poner numeros,al poner otra cosa aparece un mensaje que dice,ingrese un numero entero,si lo quiero enviar vacio no deja  
+## Pruebe qué ocurre si no incluímos el campo “donador” en el formulario
+Si no se incluye el campo donador dentro de forms.py ,nos da el error IntegrityError at /agregar/
+NOT NULL constraint failed: personas_persona.donador
+## ¿De qué se trata este error?
+Trata de que en la base de datos,donador es un campo obligatorio ,por lo tanto al no enviarle nada no puede guardarlo 
+## ¿Cómo se puede solucionar?
+Agregando el campo donador a forms.py para que se muestre ,o si no hacer que el campo donador no sea requerido ,o darle un valor por defecto a donador 
 
 
 
