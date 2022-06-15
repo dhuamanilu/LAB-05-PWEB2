@@ -4,13 +4,13 @@
 <h2>Hola mundo desde Django </h2>
 <h3>Con templates</h3>
 <p>
-	{{myText|upper|truncatechars:"16"}},
+	{{myText|truncatechars:"16"| addslashes|capfirst|cut:" "}},
 	{{myNumber}}
 </p>
 
 <ul>
 	{% for myItem in myList%}
-	<li>{{ forloop.counter }} - {{ myItem|add:"2" }}
+	<li>{{ forloop.counter }} - {{ myItem |default:"nothing" }}
 	{% if myItem == 33 %}
 		-Este número es mágico
 	

@@ -5,9 +5,10 @@ def myHomeView(request,*args, **kwargs):
 	print(args,kwargs)
 	print(request.user)
 	myContext = {
-	 	"myText": "Esto es sobre nosotros",
+	 	"myText": "i'm using Django",
         "myNumber": 123,
         "myList":[33,44,55,True,"hola"],
+        "probando":False,
         "my2dList":[[1,2,3],[5,4,6],[8,7,9]],
     }
 	return render(request,"home.html",myContext)

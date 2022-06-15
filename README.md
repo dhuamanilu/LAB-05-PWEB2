@@ -35,7 +35,7 @@ Se revisó la documentación y se utilizó lo siguiente : forloop.counter0,forlo
 ## Revisar la documentación oficial sobre if, hacer experimentos con otros operadores de comparación
 Se revisó la documentación y se utilizó los operadores: in ,not in ,is not  
 ## Probar la aplicación de varios otros filtros a variables y  bloques, revisando la documentación oficial  
-Se probo truncatechars,upper y add
+Se probo truncatechars,upper y add,ademáss adslashes capfirst y cut
 
 
 
