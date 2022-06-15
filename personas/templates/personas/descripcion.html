@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{objeto.nombres }} {{objeto.apellidos}} </h1>
+<h2>
+	{% if objeto.edad > 40 %}
+		Debe cuidarse del colesterol
+	{% else %}
+		Puede comer lo que quiera
+	{% endif %}
+</h2>
+<h3>
+	{% if objeto.donador %}
+		Es un donador,alguien se lo agradecerá algun día
+	{% else %}
+		Las personas tienen la libertad de elegir que hacer con su cuerpo
+	{% endif %}
+</h3>
+{% endblock %}
