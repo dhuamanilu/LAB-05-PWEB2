@@ -53,6 +53,9 @@ Si,esa vista es personaCreateView
 ## ¿En qué momento se hace llamada GET y en qué momento se hace la llamada POST?
 Se hace la llamada GET cuando entramos en la pagina ,pues tenemos que darle el html al cliente ,se hace la llamada POST cuando enviamos el formulario  
 # DJANGO 4  
+## Revise si algún tipo de dato permitido en el modelo no existe en los tipos de datos de forms  
+Si hay tipos de datos que estan permitidos en el modelo pero no existen en forms,por ejemplo : AutoField,BigAutoField,BigIntegerField, BinaryField entre otros.  
+
 
 
 
