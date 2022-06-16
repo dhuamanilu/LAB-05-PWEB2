@@ -46,7 +46,12 @@ NOT NULL constraint failed: personas_persona.donador
 ## ¿De qué se trata este error?
 Trata de que en la base de datos,donador es un campo obligatorio ,por lo tanto al no enviarle nada no puede guardarlo 
 ## ¿Cómo se puede solucionar?
-Agregando el campo donador a forms.py para que se muestre ,o si no hacer que el campo donador no sea requerido ,o darle un valor por defecto a donador 
+Agregando el campo donador a forms.py para que se muestre ,o si no hacer que el campo donador no sea requerido ,o darle un valor por defecto a donador  
+## Note que una de nuestras vistas se invoca con GET y luego con POST
+Si,esa vista es personaCreateView  
+
+## ¿En qué momento se hace llamada GET y en qué momento se hace la llamada POST?
+Se hace la llamada GET cuando entramos en la pagina ,pues tenemos que darle el html al cliente ,se hace la llamada POST cuando enviamos el formulario
 
 
 
