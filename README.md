@@ -51,7 +51,9 @@ Agregando el campo donador a forms.py para que se muestre ,o si no hacer que el 
 Si,esa vista es personaCreateView  
 
 ## ¿En qué momento se hace llamada GET y en qué momento se hace la llamada POST?
-Se hace la llamada GET cuando entramos en la pagina ,pues tenemos que darle el html al cliente ,se hace la llamada POST cuando enviamos el formulario
+Se hace la llamada GET cuando entramos en la pagina ,pues tenemos que darle el html al cliente ,se hace la llamada POST cuando enviamos el formulario  
+# DJANGO 4  
+
 
 
 
