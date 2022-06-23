@@ -60,7 +60,9 @@ Se probo el formulario como lista no ordenada,como tabla
 ## Ponga a prueba la seguridad de Django haciendo algo de hacking sobre el código HTML: haga que los campos no sean “requeridos”  
 Se puso a prueba la seguridad de Django haciendo que los campos no sean required,al tratar de enviar el form nos aparece un mensaje en el mismo HTML que dice que el campo es obligatorio  
 ## Haga un poco de hacking sobre el código HTML, cambie el tipo de dato de los campos en el formulario  
-Se cambio el tipo de datos ,al hacerlo igual aparece en el html un mensaje que indica el tipo de campo que deberia de ser,en la consola del servidor se imprime los errores o la data limpia del form
+Se cambio el tipo de datos ,al hacerlo igual aparece en el html un mensaje que indica el tipo de campo que deberia de ser,en la consola del servidor se imprime los errores o la data limpia del form  
+## ¿Cuál es el valor para las opciones core by default?  
+valores Por defecto ,para required = True, etiqueta predeterminada de label= es el nombre del campo con los guiones bajos convertidos en espacios y poner en mayuscula a la primera letra,label_suffix= ":" ,initial ="" 
 
 
 
