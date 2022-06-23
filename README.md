@@ -56,7 +56,9 @@ Se hace la llamada GET cuando entramos en la pagina ,pues tenemos que darle el h
 ## Revise si algún tipo de dato permitido en el modelo no existe en los tipos de datos de forms  
 Si hay tipos de datos que estan permitidos en el modelo pero no existen en forms,por ejemplo : AutoField,BigAutoField,BigIntegerField, BinaryField entre otros.
 ## Modifique el template y Explore otras opciones distintas a form.as_p  
-Se probo el formulario como lista no ordenada,como tabla
+Se probo el formulario como lista no ordenada,como tabla  
+## Ponga a prueba la seguridad de Django haciendo algo de hacking sobre el código HTML: haga que los campos no sean “requeridos”  
+Se puso a prueba la seguridad de Django haciendo que los campos no sean required,al tratar de enviar el form nos aparece un mensaje en el mismo HTML que dice que el campo es obligatorio
 
 
 
