@@ -62,7 +62,10 @@ Se puso a prueba la seguridad de Django haciendo que los campos no sean required
 ## Haga un poco de hacking sobre el código HTML, cambie el tipo de dato de los campos en el formulario  
 Se cambio el tipo de datos ,al hacerlo igual aparece en el html un mensaje que indica el tipo de campo que deberia de ser,en la consola del servidor se imprime los errores o la data limpia del form  
 ## ¿Cuál es el valor para las opciones core by default?  
-valores Por defecto ,para required = True, etiqueta predeterminada de label= es el nombre del campo con los guiones bajos convertidos en espacios y poner en mayuscula a la primera letra,label_suffix= ":" ,initial ="" 
+valores Por defecto ,para required = True, etiqueta predeterminada de label= es el nombre del campo con los guiones bajos convertidos en espacios y poner en mayuscula a la primera letra,label_suffix= ":" ,initial =""  
+## Haga sus propias validaciones  
+Se hizo las validaciones en nombres apellidos y edad, edad entre 0 y 400 ,nombres y apellidos con length < 100 y 1era letra mayuscula  
+
 
 
 

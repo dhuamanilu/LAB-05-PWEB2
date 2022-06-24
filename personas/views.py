@@ -25,6 +25,7 @@ def personasAnotherCreateView(request):
 		if form.is_valid():
 			print(form.cleaned_data)
 			Persona.objects.create(**form.cleaned_data)
+			form=RawPersonaForm()
 		else:
 			print(form.errors)
 
