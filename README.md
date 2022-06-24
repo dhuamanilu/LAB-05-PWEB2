@@ -65,6 +65,9 @@ Se cambio el tipo de datos ,al hacerlo igual aparece en el html un mensaje que i
 valores Por defecto ,para required = True, etiqueta predeterminada de label= es el nombre del campo con los guiones bajos convertidos en espacios y poner en mayuscula a la primera letra,label_suffix= ":" ,initial =""  
 ## Haga sus propias validaciones  
 Se hizo las validaciones en nombres apellidos y edad, edad entre 0 y 400 ,nombres y apellidos con length < 100 y 1era letra mayuscula  
+## Diapositiva 12Esto permite editar un objeto, ¡Pruébelo!  
+usando instance para modificar objetos , funciona 👍
+ 
 
 
 
