@@ -35,8 +35,9 @@ def personasAnotherCreateView(request):
 	return render(request,'personas/personasCreate2.html',context)
 
 def personaCreateVista(request):
-	obj = Persona.objects.get(id=13)
-	form=PersonaForm(request.POST or None,instance = obj) 
+	#obj = Persona.objects.get(id=13)
+	initialValues={'nombres':'Sin nombre'}
+	form=PersonaForm(request.POST or None,initial =initialValues) 
 	if form.is_valid():
 		form.save()
 		form=PersonaForm()
