@@ -32,3 +32,14 @@ def personasAnotherCreateView(request):
 		'form':form,
 	}
 	return render(request,'personas/personasCreate2.html',context)
+
+def personaCreateVista(request):
+	form=PersonaForm(request.POST or None) 
+	if form.is_valid():
+		form.save()
+		form=PersonaForm()
+
+	context={
+		'form':form,
+	}
+	return render(request,'personas/personasCreate3.html',context)
