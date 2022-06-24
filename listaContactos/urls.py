@@ -30,7 +30,7 @@ urlpatterns = [
     path('anotherAdd/',personasAnotherCreateView,name='OtroAgregarPersonas'),
     path('agregar/',personaCreateView,name='createPersona'),
     path('search/',searchForHelp,name='buscar'),
-    path('personas/<int:myID>/',personasShowObject,name='navegando'),
+    path('personas/<int:myID>/',personasShowObject,name='browsing'),
     path('personas/',personasListView,name='Listando'),
     path('personas/<int:myID>/delete/',personasDeleteView,name='deleting'),
 ]
