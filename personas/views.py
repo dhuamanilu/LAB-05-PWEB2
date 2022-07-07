@@ -3,7 +3,7 @@ from django.urls import reverse_lazy
 from .models import Persona
 from .forms import PersonaForm, RawPersonaForm
 from django.views import View
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 from django.views.generic import (ListView,DetailView,CreateView,UpdateView,DeleteView)
 # Create your views here.
 class PersonaListView(ListView):
@@ -39,7 +39,10 @@ class PersonaQueryView(View):
 	def get(self,request, *args, **kwargs):
 		return HttpResponse('Hola Mundo con Clases')
 
-
+class PersonaQueryView2(View):
+	def get(self,request, *args, **kwargs):
+		queryset = Persona.objects.filter(edad__lte='40')
+		return JsonResponse(list(queryset.values()), safe=False)
 
 def personaTestView(request):
 	obj =Persona.objects.get(id=2)
