@@ -1,0 +1,15 @@
+{% extends 'baseN.html' %}
+
+{% block title %}
+    Crear nueva persona
+{% endblock %}
+
+{% block body %}
+    <h1>Crear nueva persona</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+
+{% endblock %}
