@@ -1,6 +1,6 @@
 from django.urls import path
 from personas.views import (PersonaListView,PersonaDetailView,PersonaCreateView,PersonaUpdateView,
-                            PersonaDeleteView)
+                            PersonaDeleteView,PersonaQueryView)
 
 app_name='personas'
 urlpatterns=[
@@ -9,4 +9,5 @@ urlpatterns=[
     path('<int:pk>/',PersonaDetailView.as_view(),name='persona-detail'),
     path('<int:pk>/update/',PersonaUpdateView.as_view(),name='persona-update'),
     path('<int:pk>/delete/',PersonaDeleteView.as_view(),name='persona-delete'),
+    path('query/',PersonaQueryView.as_view(),name='persona-query'),
 ]
