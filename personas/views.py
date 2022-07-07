@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Persona
 from .forms import PersonaForm, RawPersonaForm
-from django.views.generic import (ListView,DetailView,CreateView)
+from django.views.generic import (ListView,DetailView,CreateView,UpdateView)
 # Create your views here.
 class PersonaListView(ListView):
 	model = Persona 
@@ -19,7 +19,14 @@ class PersonaCreateView(CreateView):
 		'donador',
 	]
 
-
+class PersonaUpdateView(UpdateView):
+	model = Persona
+	fields=[
+		'nombres',
+		'apellidos',
+		'edad',
+		'donador',
+	]
 
 
 
