@@ -1,0 +1,16 @@
+{% extends 'baseN.html' %}
+
+{% block title %}
+    Borrado de persona
+{% endblock %}
+
+{% block body %}
+    <h1>Borrando persona</h1>
+    <h2>{{ object.apellidos }} / {{ object.nombres }}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <p>Confirme que desea borrar a esta persona</p>
+        <input type="submit" value="Confirmar">
+    </form>
+
+{% endblock %}

@@ -1,6 +1,6 @@
 from django.urls import path
 from personas.views import (PersonaListView,PersonaDetailView,PersonaCreateView,PersonaUpdateView,
-                            personasDeleteView)
+                            PersonaDeleteView)
 
 app_name='personas'
 urlpatterns=[
@@ -8,5 +8,5 @@ urlpatterns=[
     path('create/',PersonaCreateView.as_view(),name='persona-create'),
     path('<int:pk>/',PersonaDetailView.as_view(),name='persona-detail'),
     path('<int:pk>/update/',PersonaUpdateView.as_view(),name='persona-update'),
-    path('<int:myID>/delete/',personasDeleteView,name='deleting'),
+    path('<int:pk>/delete/',PersonaDeleteView.as_view(),name='persona-delete'),
 ]
