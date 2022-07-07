@@ -1,14 +1,14 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Persona
 from .forms import PersonaForm, RawPersonaForm
-from django.views.generic.list import (ListView)
+from django.views.generic import (ListView,DetailView)
 # Create your views here.
 class PersonaListView(ListView):
 	model = Persona 
 	queryset=Persona.objects.filter(edad__lte='40')
 
-
-
+class PersonaDetailView(DetailView):
+	model = Persona
 
 
 
