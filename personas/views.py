@@ -4,8 +4,8 @@ from .forms import PersonaForm, RawPersonaForm
 from django.views.generic.list import (ListView)
 # Create your views here.
 class PersonaListView(ListView):
-	model = Persona
-
+	model = Persona 
+	queryset=Persona.objects.filter(edad__lte='40')
 
 
 
